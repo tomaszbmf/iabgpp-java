@@ -1,0 +1,30 @@
+package com.mobilefuse.sdk.iab.gpp.encoder.datatype;
+
+import com.mobilefuse.sdk.iab.gpp.encoder.datatype.encoder.BooleanEncoder;
+import com.mobilefuse.sdk.iab.gpp.encoder.error.DecodingException;
+import com.mobilefuse.sdk.iab.gpp.encoder.error.EncodingException;
+
+public class EncodableBoolean extends AbstractEncodableBitStringDataType<Boolean> {
+
+  protected EncodableBoolean() {
+    super();
+  }
+
+  public EncodableBoolean(Boolean value) {
+    super();
+    setValue(value);
+  }
+
+  public String encode() throws EncodingException {
+    return BooleanEncoder.encode(this.value);
+  }
+
+  public void decode(String bitString) throws DecodingException {
+    this.value = BooleanEncoder.decode(bitString);
+  }
+
+  public String substring(String bitString, int fromIndex) {
+    // TODO: validate
+    return bitString.substring(fromIndex, fromIndex + 1);
+  }
+}

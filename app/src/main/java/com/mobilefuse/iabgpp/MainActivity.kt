@@ -3,7 +3,7 @@ package com.mobilefuse.iabgpp
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import com.iab.gpp.encoder.GppModel
+import com.mobilefuse.sdk.iab.gpp.encoder.GppModel
 
 class MainActivity : AppCompatActivity() {
 
@@ -17,7 +17,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun simpleTest() {
-        val gppModel = GppModel(testGppConsentString)
+        val gppModel =
+            GppModel(testGppConsentString)
         Log.d("MF", "Decoded gpp string")
     }
 }
