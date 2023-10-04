@@ -3,7 +3,7 @@ package com.iab.gpp.encoder.datatype.encoder;
 import java.util.ArrayList;
 import java.util.Arrays;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 import com.iab.gpp.encoder.error.DecodingException;
 
 public class FibonacciIntegerRangeEncoderTest {

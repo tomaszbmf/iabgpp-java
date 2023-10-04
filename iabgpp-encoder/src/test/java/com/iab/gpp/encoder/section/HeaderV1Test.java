@@ -2,8 +2,9 @@ package com.iab.gpp.encoder.section;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+
+import org.junit.Test;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
 import com.iab.gpp.encoder.error.DecodingException;
 import com.iab.gpp.encoder.error.EncodingException;
 import com.iab.gpp.encoder.error.InvalidFieldException;

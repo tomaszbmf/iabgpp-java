@@ -1,7 +1,7 @@
 package com.iab.gpp.encoder.datatype.encoder;
 
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 import com.iab.gpp.encoder.error.DecodingException;
 
 public class FixedLongEncoderTest {
@@ -38,27 +38,27 @@ public class FixedLongEncoderTest {
 
   @Test
   public void testDecode1() throws DecodingException {
-    Assertions.assertEquals(0, FixedLongEncoder.decode(""));
+    Assertions.assertEquals(0L, FixedLongEncoder.decode(""));
   }
 
   @Test
   public void testDecode2() throws DecodingException {
-    Assertions.assertEquals(0, FixedLongEncoder.decode("0"));
+    Assertions.assertEquals(0L, FixedLongEncoder.decode("0"));
   }
 
   @Test
   public void testDecode3() throws DecodingException {
-    Assertions.assertEquals(0, FixedLongEncoder.decode("000000"));
+    Assertions.assertEquals(0L, FixedLongEncoder.decode("000000"));
   }
 
   @Test
   public void testDecode4() throws DecodingException {
-    Assertions.assertEquals(1, FixedLongEncoder.decode("1"));
+    Assertions.assertEquals(1L, FixedLongEncoder.decode("1"));
   }
 
   @Test
   public void testDecode5() throws DecodingException {
-    Assertions.assertEquals(1, FixedLongEncoder.decode("000001"));
+    Assertions.assertEquals(1L, FixedLongEncoder.decode("000001"));
   }
 
   @Test
@@ -68,11 +68,11 @@ public class FixedLongEncoderTest {
 
   @Test
   public void testDecode7() throws DecodingException {
-    Assertions.assertEquals(8, FixedLongEncoder.decode("1000"));
+    Assertions.assertEquals(8L, FixedLongEncoder.decode("1000"));
   }
 
   @Test
   public void testDecode8() throws DecodingException {
-    Assertions.assertEquals(8, FixedLongEncoder.decode("0000001000"));
+    Assertions.assertEquals(8L, FixedLongEncoder.decode("0000001000"));
   }
 }

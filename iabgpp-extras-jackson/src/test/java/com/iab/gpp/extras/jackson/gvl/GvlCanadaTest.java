@@ -3,7 +3,7 @@ package com.iab.gpp.extras.jackson.gvl;
 import com.iab.gpp.extras.gvl.Gvl;
 import com.iab.gpp.extras.jackson.Loader;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 import java.io.IOException;
 import java.util.Arrays;

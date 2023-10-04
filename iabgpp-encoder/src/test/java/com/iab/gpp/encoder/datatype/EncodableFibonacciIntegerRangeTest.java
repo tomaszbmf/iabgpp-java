@@ -1,8 +1,9 @@
 package com.iab.gpp.encoder.datatype;
 
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
 import com.iab.gpp.encoder.error.DecodingException;
+
+import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
 
 public class EncodableFibonacciIntegerRangeTest {
 

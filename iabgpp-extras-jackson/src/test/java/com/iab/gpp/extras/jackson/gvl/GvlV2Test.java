@@ -24,7 +24,7 @@ import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 import com.iab.gpp.extras.gvl.Gvl;
 import com.iab.gpp.extras.jackson.Loader;
 
