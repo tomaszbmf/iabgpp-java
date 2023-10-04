@@ -1,13 +1,35 @@
+# .idea folder
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf
+/local.properties
+.idea/**/caches
+.idea/**/misc.xml
+.idea/**/navEditor.xml
+.idea/**/assetWizardSettings.xml
+.idea/deploymentTargetDropDown.xml
+
+# Gradle
+.idea/**/gradle.xml
+.idea/**/libraries
+.gradle
+
+# Gradle and Maven with auto-import
+.idea/artifacts
+.idea/compiler.xml
+.idea/jarRepositories.xml
+.idea/modules.xml
+.idea/*.iml
+.idea/modules
+*.iml
+*.ipr
+
 .DS_Store
-target
-/.idea/
-/iabtcf-core.iml
-*~
-.checkstyle
-.classpath
-.project
-.settings
-iabtcf-decoder/iabtcf-decoder.iml
-iabtcf-encoder/iabtcf-encoder.iml
-iabtcf-extras/iabtcf-extras.iml
-iabtcf-extras-jackson/iabtcf-extras-jackson.iml
+/build
+/captures
+.externalNativeBuild
+.cxx
+
+*.aar.asc
